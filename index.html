@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
 
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+
+      <div class="col-md-4" id="hangman-image"></div>
+
+      <div class="col-md-4">
+      	<h2 id="won-lost"></h2>
+        <h3 id="press-key">Press # key to start new game</h3>
+
+        <h3>Current Word</h3>
+        <P id="letters-matched"></P>
+			
+        <h3>Letters guessed</h3>
+		<P id="letters-guessed"></P>
+
+		<h3 id="games-won"></h3>
+      </div>
+      <div class="col-md-2"></div>
+	</div>
+  </div>	
+
+  <!-- Added link to the game.js -->
+  <script type="text/javascript" src="assets\javascript\game.js"></script>
+</body>
+</html>
